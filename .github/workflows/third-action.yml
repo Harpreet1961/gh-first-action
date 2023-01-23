@@ -1,0 +1,10 @@
+name: Third_Act
+on: workflow_dispatch
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Metadata
+        run: echo "${{ toJSON(github) }}"
+        
+
